@@ -2,10 +2,19 @@ input[type="date"] {
   background-color: #b0d5ea;
   border-radius: 10px;
   padding: 0 5px;
+  border: #b0d5ea;
 }
 
 .datepicker {
   display: flex;
   align-items: center;
   gap: 5px;
+
+  &-title {
+    border-radius: 10px;
+    padding: 0 5px;
+    padding-right: 1rem;
+    border: #b0d5ea;
+    background-color: #b0d5ea;
+  }
 }

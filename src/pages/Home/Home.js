@@ -1,9 +1,9 @@
 import "./Home.scss";
 import Circle from "../../components/Circle/Circle";
 import Image1 from "../../assets/circle1.svg";
-import Image2 from "../../assets/circle2.svg";
 import Image3 from "../../assets/circle3.svg";
 import Image4 from "../../assets/circle4.svg";
+import ImageHome from "../../assets/Home-lightening.svg";
 
 export default function Home() {
   return (
@@ -21,7 +21,7 @@ export default function Home() {
           <Circle
             linkTo={"/myhome"}
             header="My Home"
-            image={Image2}
+            image={ImageHome}
             text="6.7 k.W"
             addClass={"circle--2"}
             headerBelow={true}

@@ -12,7 +12,7 @@
     justify-content: space-evenly;
     max-width: 85%;
     margin-left: 7%;
-    padding-top: 2rem;
+    padding-top: 5rem;
   }
   &-container {
     display: flex;
@@ -53,10 +53,16 @@
   &-btn {
     @include button;
     @include button-text;
+    border: solid 1px #b0d5ea;
   }
-}
-.blue {
-  @include button;
-  @include button-text;
-  background-color: #0077bb;
+
+  &-btn:hover {
+    background-color: #0077bb;
+    border: solid 1px #0077bb;
+  }
+
+  &-btn:focus {
+    background-color: #0077bb;
+    border: solid 1px #0077bb;
+  }
 }

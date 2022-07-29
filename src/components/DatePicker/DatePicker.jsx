@@ -5,7 +5,7 @@ function Datepicker() {
   const [date, setDate] = useState();
   return (
     <div className="datepicker">
-      <h2>Date:</h2>
+      <h2 className="datepicker-title">Date:</h2>
       <input
         placeholder="today"
         type="date"
