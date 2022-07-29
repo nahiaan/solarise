@@ -61,7 +61,7 @@ export default function LinePlot({ date }) {
       layout={{
         margin: { l: 20, r: 20, b: 20, t: 20 },
         width: 330,
-        height: 320,
+        height: 350,
         paper_bgcolor: "#001723",
         plot_bgcolor: "#001723",
         font: {
@@ -80,8 +80,11 @@ export default function LinePlot({ date }) {
         legend: {
           x: 0.5,
           xanchor: "right",
-          y: 1,
+          y: 1.2,
         },
+      }}
+      config={{
+        displayModeBar: false, // this is the line that hides the bar.
       }}
     />
   );
