@@ -11,6 +11,7 @@ export default function Home() {
       <h1>Hello Tammy</h1>
       <div className="home__circles">
         <Circle
+          linkTo={"/solarpanel"}
           header="Solar Panel"
           image={Image1}
           text="4 k.W"
@@ -43,4 +44,4 @@ export default function Home() {
       </div>
     </div>
   );
-};
+}
