@@ -9,21 +9,21 @@ export default function Menu() {
   return (
     <div className="menu sticky">
       <div className="menu__wrapper">
-        <Link to="/">
+        <Link to="/" className="menu__link">
           <img src={House} alt="" />
-          <p>Home</p>
+          <p className="menu__title">Home</p>
         </Link>
       </div>
       <div className="menu__wrapper">
-        <Link to="/myhome">
+        <Link to="/myhome" className="menu__link">
           <img src={Panel} alt="" />
-          <p>Panels</p>
+          <p className="menu__title">Panels</p>
         </Link>
       </div>
       <div className="menu__wrapper selected">
-        <Link to="/myhome">
+        <Link to="/myhome" className="menu__link">
           <img src={Energy} alt="" />
-          <p>Energy</p>
+          <p className="menu__title">Energy</p>
         </Link>
       </div>
     </div>

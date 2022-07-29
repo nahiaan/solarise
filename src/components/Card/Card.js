@@ -1,6 +1,8 @@
 import "./Card.scss";
 import React, { useEffect, useState } from "react";
 import CircleSmall from "../Circle/CircleSmall";
+import "../Circle/Circle";
+import Circle from "../Circle/Circle";
 
 function Card() {
   const [co2, setCo2] = useState("6345 lbs");
@@ -38,7 +40,11 @@ function Card() {
           Last Year
         </button>
       </div>
+
       <div className="card-container">
+        <div className="card-circle"></div>
+        <div className="card-circle circle2"></div>
+        <div className="card-circle circle3"></div>
         <div className="card-item">
           <h2 className="card-subtitle">CO2 Emissions saved</h2>
           <h1 className="card-num__title">{co2}</h1>

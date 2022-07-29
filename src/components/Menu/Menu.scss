@@ -11,6 +11,11 @@
   justify-content: space-around;
   width: 100%;
 
+  &__title {
+    text-decoration: none !important;
+    color: black;
+  }
+
   &__link {
     display: flex;
     flex-direction: column;

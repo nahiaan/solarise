@@ -25,17 +25,24 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
     margin-left: 7%;
+    background: rgba(255, 255, 255, 0.17);
+    backdrop-filter: blur(22px);
   }
   &-item2 {
     margin-top: 2rem;
     @include info-card;
     margin-bottom: 1rem;
     margin-left: 7%;
+    background: rgba(255, 255, 255, 0.17);
+    backdrop-filter: blur(22px);
   }
   &-item3 {
     margin-top: 2rem;
     @include info-card;
     margin-left: 7%;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.17);
+    backdrop-filter: blur(22px);
   }
 
   &-subtitle {
@@ -65,4 +72,31 @@
     background-color: #0077bb;
     border: solid 1px #0077bb;
   }
+
+  &-circle {
+    width: 60.8px;
+    height: 60.8px;
+    left: 150px;
+    top: 498px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 10px white;
+    align-items: center;
+    border: white 1px solid;
+    position: absolute;
+    z-index: 0;
+  }
+}
+.circle2 {
+  top: 230px;
+  left: 228px;
+  box-shadow: 0 0 30px 10px white;
+}
+
+.circle3 {
+  top: 275px;
+  left: 70px;
+  border: 2.5px solid #b0d5ea;
+  box-shadow: -2px -2px 90px 20px white;
+  width: 57px;
+  height: 57px;
 }
