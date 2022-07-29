@@ -1,1 +1,28 @@
-@use "../../partials/templates" as *;
+.home {
+  background-color: #001723;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20%;
+  color: white;
+
+  &__circles {
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+
+    &-subgroup {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}
+
+h1 {
+  justify-self: center;
+  align-self: center;
+  margin-top: 10%;
+  font-size: 4rem;
+}
