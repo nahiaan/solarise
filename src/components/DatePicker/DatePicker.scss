@@ -9,11 +9,18 @@ input[type="date"] {
   display: flex;
   align-items: center;
   gap: 5px;
+  background-color: #b0d5ea;
+  border-radius: 15px;
+  padding-right: 5px;
+  padding-right: 1rem;
+  width: 43vw;
+  color: black;
+  padding-left: 1rem;
+  height: 4vh;
 
   &-title {
     border-radius: 10px;
     padding: 0 5px;
-    padding-right: 1rem;
     border: #b0d5ea;
     background-color: #b0d5ea;
   }
