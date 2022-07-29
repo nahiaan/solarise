@@ -8,6 +8,12 @@
   gap: 20%;
   color: white;
 
+  &__title {
+    font-size: 4rem;
+    padding: 2rem;
+    font-weight: 500;
+  }
+
   &__circles {
     display: flex;
     flex-direction: column;
