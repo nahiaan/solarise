@@ -66,16 +66,34 @@ export default function LinePlot({ date }) {
         plot_bgcolor: "#001723",
         font: {
           family: "Roboto",
-          size: 15,
+          size: 12,
           color: "white",
         },
         yaxis: {
-          visible: false,
+          visible: true,
+          automargin: true,
+          title: {
+            text: "k.W.",
+            font: {
+              family: "Roboto",
+              size: 14,
+              color: "white",
+            },
+          },
         },
         xaxis: {
           tickmode: "linear", //  If "linear", the placement of the ticks is determined by a starting position `tick0` and a tick step `dtick`
           tick0: 2,
           dtick: 2,
+          automargin: true,
+          title: {
+            text: "Hour",
+            font: {
+              family: "Roboto",
+              size: 14,
+              color: "white",
+            },
+          },
         },
         legend: {
           x: 0.5,

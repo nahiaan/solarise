@@ -8,16 +8,35 @@ import LeftLine from "../../assets/LeftLine.svg";
 import RightLine from "../../assets/RightLine.svg";
 import MiddleLine from "../../assets/MiddleLine.svg";
 
+import { useState, useEffect } from "react";
+
 export default function Home() {
+  const [panel, setPanel] = useState(12.7);
+  const [home, setHome] = useState(7.2);
+  const [powerWall, setPowerWall] = useState(2.4);
+  const [grid, setGrid] = useState(3.1);
+
+  useEffect(() => {
+    setInterval(() => {
+      const newEnergy = Math.random();
+      setPanel((state) => parseFloat((state + newEnergy).toFixed(1)));
+      setHome((state) => parseFloat((state + 0.6 * newEnergy).toFixed(1)));
+      setPowerWall((state) =>
+        parseFloat((state + 0.15 * newEnergy).toFixed(1))
+      );
+      setGrid((state) => parseFloat((state + 0.25 * newEnergy).toFixed(1)));
+    }, 1000);
+  }, []);
+
   return (
     <div className="home">
-      <h1 className="home__title">Hello Tammy</h1>
+      <h1 className="home__title">Tammy's Dashboard</h1>
       <div className="home__circles">
         <Circle
           linkTo={"/solarpanel"}
           header="Solar Panel"
           image={Image1}
-          text="4 k.W"
+          text={`${panel} k.W.`}
           addClass={"circle--1"}
         />
         <img src={LeftLine} alt="" className="left__line" />
@@ -28,21 +47,21 @@ export default function Home() {
             linkTo={"/myhome"}
             header="My Home"
             image={ImageHome}
-            text="6.7 k.W"
+            text={`${home} k.W.`}
             addClass={"circle--2"}
             headerBelow={true}
           />
           <Circle
             header="Powerwall"
             image={Image3}
-            text="8.5 k.W"
+            text={`${powerWall} k.W.`}
             addClass={"circle--3"}
             headerBelow={true}
           />
           <Circle
             header="National Grid"
             image={Image4}
-            text="10 k.W"
+            text={`${grid} k.W.`}
             addClass={"circle--4"}
             headerBelow={true}
           />
