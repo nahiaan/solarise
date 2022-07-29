@@ -1,7 +1,24 @@
-.menu__bar {
+.myhome {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  padding: 2rem;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 0 2rem;
+  color: white;
+
+  &__headers {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-size: 1.6rem;
+
+    &--selected {
+      text-decoration: underline;
+    }
+  }
+
+  &__plot-wrapper {
+    padding: 1rem;
+    border: 3px solid #b0d5ea;
+    border-radius: 10px;
+  }
 }

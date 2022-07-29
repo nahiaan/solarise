@@ -1,10 +1,11 @@
 import React, { useState } from "react";
+import "./DatePicker.scss";
 
 function Datepicker() {
   const [date, setDate] = useState();
   return (
-    <div>
-      <h1>Select Date:</h1>
+    <div className="datepicker">
+      <h3>Date:</h3>
       <input
         placeholder="today"
         type="date"
