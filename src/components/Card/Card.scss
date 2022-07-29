@@ -1,0 +1,27 @@
+@use "../../partials/templates" as *;
+@use "../../partials/colors" as *;
+@use "../../partials/resets" as *;
+@use "../../partials/text" as *;
+
+.card {
+  &-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &-item {
+    @include info-card;
+    margin-bottom: 1rem;
+  }
+  &-item2 {
+    @include info-card;
+    margin-bottom: 1rem;
+  }
+  &-item3 {
+    @include info-card;
+  }
+
+  &-subtitle {
+    @include small-title;
+  }
+}

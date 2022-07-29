@@ -1,0 +1,29 @@
+@use "./colors" as *;
+
+@mixin dropdown {
+  width: 267px;
+  height: 35px;
+
+  background: #006ba8;
+  border-radius: 15px;
+}
+
+@mixin button {
+  width: 57px;
+  height: 16px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #b0d5ea;
+}
+
+@mixin info-card {
+  width: 85%;
+  height: 111px;
+  background-color: $Card-blue;
+  border-radius: 15px;
+}
