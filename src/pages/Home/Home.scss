@@ -17,7 +17,7 @@
   &__circles {
     display: flex;
     flex-direction: column;
-    gap: 115px;
+    gap: 110px;
     display: relative;
 
     &-subgroup {
@@ -36,16 +36,34 @@
 
 .left__line {
   position: absolute;
-  top: 330px;
+  top: 325px;
   left: 220px;
+  animation: charging-animation 1s linear 0.1s infinite;
 }
 .middle__line {
   position: absolute;
-  top: 330px;
+  top: 325px;
   left: 205px;
+  animation: charging-animation 1s linear 0.1s infinite;
 }
 .right__line {
   position: absolute;
-  top: 330px;
+  top: 325px;
   left: 70px;
+  animation: charging-animation 1s linear 0.1s infinite;
+}
+
+@keyframes charging-animation {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.75;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  75% {
+    opacity: 0.75;
+  }
 }
