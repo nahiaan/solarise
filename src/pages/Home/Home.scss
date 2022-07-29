@@ -17,12 +17,12 @@
       display: flex;
       justify-content: space-around;
     }
-  }
-}
 
-h1 {
-  justify-self: center;
-  align-self: center;
-  margin-top: 10%;
-  font-size: 4rem;
+    &__title {
+      justify-self: center;
+      align-self: center;
+      margin-top: 10%;
+      font-size: 4rem;
+    }
+  }
 }

@@ -9,16 +9,17 @@
 }
 
 @mixin button {
-  width: 57px;
-  height: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 6px 16px;
+  gap: 10px;
 
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
+  width: 100px;
+  height: 33px;
 
-  color: #b0d5ea;
+  background: #b0d5ea;
+  border-radius: 42px;
 }
 
 @mixin info-card {

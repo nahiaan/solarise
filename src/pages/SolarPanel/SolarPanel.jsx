@@ -1,5 +1,14 @@
 import React from "react";
+import Card from "../../components/Card/Card";
+import MenuBar from "../../components/MenuBar/MenuBar";
 
-export default function SolarPanel() {
-  return <div>SolarPanel</div>;
+function SolarPanel() {
+  return (
+    <div>
+      <MenuBar selected={"Panel"} />
+      <Card />
+    </div>
+  );
 }
+
+export default SolarPanel;

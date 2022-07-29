@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 html {
   font-size: 62.5%;
   padding: 0;
@@ -14,6 +17,5 @@ body {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
-  //   color: ;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
 }

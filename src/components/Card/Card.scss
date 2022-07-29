@@ -4,24 +4,59 @@
 @use "../../partials/text" as *;
 
 .card {
+  &-btn__wrapper {
+    display: flex;
+    flex: none;
+    flex-grow: 0;
+    margin-left: 10%;
+    justify-content: space-evenly;
+    max-width: 85%;
+    margin-left: 7%;
+    padding-top: 2rem;
+  }
   &-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 2rem;
   }
   &-item {
     @include info-card;
+    margin-top: 1rem;
     margin-bottom: 1rem;
+    margin-left: 7%;
   }
   &-item2 {
+    margin-top: 2rem;
     @include info-card;
     margin-bottom: 1rem;
+    margin-left: 7%;
   }
   &-item3 {
+    margin-top: 2rem;
     @include info-card;
+    margin-left: 7%;
   }
 
   &-subtitle {
-    @include small-title;
+    @include sub-heading;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    font-weight: 500;
   }
+
+  &-num__title {
+    text-align: end;
+    padding: 2rem;
+    @include number-info;
+  }
+  &-btn {
+    @include button;
+    @include button-text;
+  }
+}
+.blue {
+  @include button;
+  @include button-text;
+  background-color: #0077bb;
 }

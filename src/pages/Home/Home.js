@@ -8,7 +8,7 @@ import Image4 from "../../assets/circle4.svg";
 export default function Home() {
   return (
     <div className="home">
-      <h1>Hello Tammy</h1>
+      <h1 className="home__title">Hello Tammy</h1>
       <div className="home__circles">
         <Circle
           linkTo={"/solarpanel"}
