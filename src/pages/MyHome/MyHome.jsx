@@ -13,7 +13,7 @@ export default function MyHome() {
         <h2>Savings</h2>
       </div>
       <DatePicker />
-      <h3>Average usage:</h3>
+      <h2>Average usage:</h2>
       <div className="myhome__plot-wrapper">
         <LinePlot />
       </div>

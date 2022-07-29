@@ -18,7 +18,7 @@ export default function LinePlot() {
       layout={{
         margin: { l: 20, r: 20, b: 20, t: 20 },
         width: 300,
-        height: 400,
+        height: 350,
         paper_bgcolor: "#001723",
         plot_bgcolor: "#001723",
         font: {
