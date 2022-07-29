@@ -1,15 +1,13 @@
-import React, { useState } from "react";
 import "./DatePicker.scss";
 
-function Datepicker() {
-  const [date, setDate] = useState();
+function Datepicker({ date, setDate }) {
   return (
     <div className="datepicker">
       <h2>Date:</h2>
       <input
         placeholder="today"
         type="date"
-        value="2022-07-29"
+        value={date}
         onChange={(e) => setDate(e.target.value)}
       />
     </div>
