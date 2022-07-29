@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 20%;
+  gap: 15%;
   color: white;
 
   &__title {
@@ -17,7 +17,8 @@
   &__circles {
     display: flex;
     flex-direction: column;
-    gap: 75px;
+    gap: 115px;
+    display: relative;
 
     &-subgroup {
       display: flex;
@@ -31,4 +32,20 @@
       font-size: 4rem;
     }
   }
+}
+
+.left__line {
+  position: absolute;
+  top: 330px;
+  left: 220px;
+}
+.middle__line {
+  position: absolute;
+  top: 330px;
+  left: 205px;
+}
+.right__line {
+  position: absolute;
+  top: 330px;
+  left: 70px;
 }

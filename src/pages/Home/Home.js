@@ -4,6 +4,9 @@ import Image1 from "../../assets/circle1.svg";
 import Image3 from "../../assets/circle3.svg";
 import Image4 from "../../assets/circle4.svg";
 import ImageHome from "../../assets/Home-lightening.svg";
+import LeftLine from "../../assets/LeftLine.svg";
+import RightLine from "../../assets/RightLine.svg";
+import MiddleLine from "../../assets/MiddleLine.svg";
 
 export default function Home() {
   return (
@@ -17,6 +20,9 @@ export default function Home() {
           text="4 k.W"
           addClass={"circle--1"}
         />
+        <img src={LeftLine} alt="" className="left__line" />
+        <img src={RightLine} alt="" className="right__line" />
+        <img src={MiddleLine} alt="" className="middle__line" />
         <div className="home__circles-subgroup">
           <Circle
             linkTo={"/myhome"}
